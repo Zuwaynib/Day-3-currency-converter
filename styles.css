@@ -13,7 +13,106 @@ body {
 }
 .container {
     background: #fff;
-    max-width: 800px;
+    max-width: 350px;
     width: 70%;
     padding: 0 30px 30px 30px;
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+.container form {
+    margin: 40px 0 20px 0;
+}
+form :where(input, select, button) {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+form p {
+    font-size: 18px;
+}
+form input {
+    height: 40px;
+    font-size: 17px;
+    width: 95%;
+    padding: 0 10px;
+    border: 1px solid #888;
+}
+form input:focus {
+    border: 2px solid #800080;
+}
+form .dropbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.dropbox .icon {
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.select-box {
+    display: flex;
+    height: 30px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track {
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+
+.select-box img {
+    max-width: 30px;
+}
+form .exchange-rate{
+    font-size: 17px;
+    margin: 30px 0;
+    text-align: center;
+    background: #800080;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+form button {
+    background: #2e012e;
+    color: #fff;
+    height: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .select-box {
+        width: 100px;
+        height: 40px;
+    }
+    .select-box select {
+        width: auto;
+        font-size: 14px;
+    }
+    .select-box img {
+        max-width: 20px;
+    }
 }

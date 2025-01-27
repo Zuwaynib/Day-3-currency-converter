@@ -20,13 +20,7 @@
                 <p>From</p>
                 <div class="select-box">
                     <img src="https://flagsapi.com/US/flat/64.png" alt="country flag">
-                    <select>
-                        <option value="USD">USD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="AUD">AUD</option>
-                        <option value="WON">WON</option>
-                        <option value="NGN">NGN</option>
-                    </select>
+                    <select></select>
                 </div>
             </div>
             <div class="icon"><i class="fas fa-exchange-alt"></i></div>
@@ -34,21 +28,16 @@
                 <p>To</p>
                 <div class="select-box">
                     <img src="https://flagsapi.com/NG/flat/64.png" alt="country flag">
-                    <select>
-                        <option value="USD">USD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="AUD">AUD</option>
-                        <option value="WON">WON</option>
-                        <option value="NGN">NGN</option>
-                    </select>
+                    <select></select>
                 </div>
             </div>
-            <div class="exchange-rate">1 USD = 1670 NGN</div>
-            <button>Get Exchange Rate</button>
         </div>
+            <div class="exchange-rate">Getting exchange rate...</div>
+            <button id="get-button">Get Exchange Rate</button>
     </form>
   </div>
-    
+
+    <script src="country-list.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
